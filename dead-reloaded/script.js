@@ -5,7 +5,7 @@ const suspectInfo = {
 };
 
 const dead = ["Lucy", "Kyle"]; // dead people
-
+KillerPerson = "";
 // const suspectInfo = Object.entries(suspectInfoObj); // object to array
 
 // console.log(_suspectInfo);
@@ -18,12 +18,14 @@ function killer(suspectInfo, dead) {
           killCount++;
         }
         if (killCount === dead.length) {
-          return suspect;
+          const killerPerson = suspect;
         }
       }
     }
   }
 }
+
+console.log(killerPerson);
 // for (let suspectInfo of _suspectInfo) {
 //
 // let currentSuspect = _suspectInfo[i];

@@ -81,12 +81,37 @@
 
 // //   console.log(solution(16, 3, 5));
 
-const a = [1, 2, 3, 4, 5];
+// const a = [1, 2, 3, 4, 5];
 
-a[0] = ["A", "B", "C"];
-a[1] = ["D", "E", "F"];
-a[2] = ["G", "H", [1, 2, 3, 4]];
-a[3] = ["J", "K", "L"];
+// a[0] = ["A", "B", "C"];
+// a[1] = ["D", "E", "F"];
+// a[2] = ["G", "H", [1, 2, 3, 4]];
+// a[3] = ["J", "K", "L"];
 
-console.log(a[2][2][3]);
-console.log(a[2][2]);
+// console.log(a[2][2][3]);
+// console.log(a[2][2]);
+
+// function abbrevName(name) {
+//   let namesSeperate = name.split(" ");
+//   let initials = [];
+//   //   for (let nameSeperate of namesSeperate) {
+//   //     let initial = nameSeperate.charAt[0];
+//   for (i = 0; i < namesSeperate.length; i++) {
+//     let initial = namesSeperate[i];
+//     initial = initial.charAt(0);
+//     initial = initial.toUpperCase();
+//     initials.push(initial);
+//   }
+//   return initials.join(".");
+// }
+
+function abbrevName(name) {
+  let namesSeperate = name.split(" ");
+  let initials = [];
+  for (let nameSeperate of namesSeperate) {
+    let initial = nameSeperate.charAt(0).toUpperCase();
+    initials.push(initial);
+  }
+  return initials.join(".");
+}
+console.log(abbrevName("Sam George Charles morrison Harris"));
